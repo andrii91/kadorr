@@ -117,7 +117,21 @@ body {
   max-height: 900px;
   position: relative;
   overflow: hidden;
-  
+  &.success {
+    background: 0 0;
+    padding: 0;
+    &:before {
+    content: "";
+    background: url('../images/kadorr1.svg') no-repeat center;
+    background-size: 100%;
+
+  }
+    .container {
+      &:before {
+      display: none;
+    }
+    }
+  }
   .container  {
     position: relative;
     &:before {
@@ -1538,4 +1552,32 @@ color: #8C8C8C;
 
 .offer_photo-slider--item {
   min-height: 300px;
+}
+
+.success-item {
+  text-align: center;
+  .logo {
+    margin-bottom: 6.771vw;
+    margin-bottom: 130px;
+    display: inline-block;
+  }
+  .order-btn {
+    margin-top: 67px;
+  }
+  h1 {
+    line-height: 1;
+    margin-bottom: 40px;
+  }
+  p {
+    font-family: Proba Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #7B7B7B;
+  }
 }
