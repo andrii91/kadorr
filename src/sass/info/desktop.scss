@@ -1,2 +1,52 @@
 & {
+
+  .cases-container .img-info {
+    position: static;
+    margin-left: 0;
+  }
+
+  .cases-slider {
+   
+
+    button {
+      background: 0 0;
+      margin: 0;
+      padding: 0;
+      height: inherit;
+      border: 0;
+      position: absolute;
+      cursor: pointer;
+      z-index: 99;
+
+      &:focus {
+        outline: 0;
+      }
+
+      svg {
+        line {
+          transition: .3s;
+        }
+      }
+
+      &:hover {
+        svg {
+          line {
+            stroke: #5016FF;
+          }
+        }
+      }
+
+      &.slick-next {
+        bottom: 12px;
+        right: 20px;
+      }
+
+      &.slick-prev {
+        bottom: 55px;
+        right: 20px;
+      }
+    }
+
+  }
+
 }
